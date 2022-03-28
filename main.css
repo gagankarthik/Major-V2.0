@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    transition: .4s;
+}
+ul{
+
+    list-style-type: none;
+}
+.container{
+    background-color:#6e6d7a;
+    border-radius: 5px;
+    height: 100%;
+}
+.navbar{
+display:flex;
+overflow: hidden;
+align-items: center;
+font-family: sans-serif;
+font-size: medium;
+}
+.navbar-brand{
+    margin-right:5px;
+    font-size: large;
+    padding: 2px 0 0 15px;
+}
+.navbar-menu{
+    margin-left: auto;
+}
+.navbar-item {
+padding:15px;
+text-decoration: none;
+color: #fff;
+}
+.navbar .icon{
+    display: none;
+}
+/*----  service section      -----*/
+section{
+    padding: 6.5rem 0 1rem;
+}
+.service_container{
+    padding-top: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 1rem;
+}
+.Title{
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.sub_title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.grid{
+    display: grid;
+}
+.service_card{
+    background-color: #6e6d7a;
+    padding: 3rem 1.5rem 1.5rem;
+    border-radius: 1rem;
+}
+.service_title{
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+}
+.service_btn{
+    color: cornflowerblue;
+    font-size: .813rem;
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    cursor: pointer;
+}
+.service_btn:hover .service_icon{
+    transform: translateX(.25rem);
+
+}
+.service_icon{
+    font-size: 1rem;
+    transition: .4s;
+}
+.service_model{
+position: fixed;
+inset: 0;
+background-color:#8e8caa;
+padding: 2rem 1rem;
+display: grid;
+place-items: center;
+visibility: hidden;
+opacity:0;
+transition: .4s;
+z-index: 100;
+}
+
+.service_model-content{
+    position: relative;
+    background-color: rgb(74, 175, 125);
+    padding: 4.5rem 1.5rem 2.5rem;
+    border-radius: 1.5rem;
+}
+.service_model-title,
+.service_model-description{
+    text-align: center;
+}
+.service_model-title{
+    font-size: 1rem;
+    color: #7550a0;
+    margin-bottom: 1rem;
+}
+.service_model-description{
+    font-size: .813rem;
+    margin-bottom: 2rem;
+}
+.service_model-list{
+    display: grid;
+    row-gap: .75rem;
+}
+.service_model-item{
+    display: flex;
+    align-items: flex-start;
+    column-gap: .5rem;
+    align-items: center;
+}
+.service_model-icon{
+    font-size: 1.5rem;
+    color: #7550a0;
+}
+.service_model-info{
+    font-size: .813rem;
+}
+.service_model-close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: #5E6EC7;
+    cursor: pointer;
+}
+.active-model{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*------  Trends section  -----*/
+
+
+
+
+
+
+/*---   Mobile View   ------*/
+@media only screen and (max-width: 600px) {
+    .navbar a{display: none;}
+    .navbar a.icon{
+        float: right;
+        margin-right: 10px;
+        color: #fff;
+        display: block;
+    }
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      display:block;
+      float: left;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      
+    }
+    .col{
+        display:block;
+        width: 95%;
+        margin-bottom: 20px;
+    }
+  }
