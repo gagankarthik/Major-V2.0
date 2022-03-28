@@ -221,15 +221,47 @@
         <h3 class="sub_title">Subtitle</h3>
 
         <div class="trends_filters">
-            <span class="trends_item">All</span>
-            <span class="trends_item">Age</span>
-            <span class="trends_item">Database</span>
-            <span class="trends_item">Education</span>
-            <span class="trends_item">Gender</span>
-            <span class="trends_item">Employment Status</span>
-            <span class="trends_item">Language Trends</span>
-            <span class="trends_item">Where do you live</span>
-            <span class="trends_item">Languages people are intersted to learn</span>
+            <span class="trends_item active-trends" data-filter="all">All</span>
+            <span class="trends_item" data-filter=".age" >Age</span>
+            <span class="trends_item" data-filter=".database">Database</span>
+            <span class="trends_item" data-filter=".education">Education</span>
+            <span class="trends_item" data-filter=".gender">Gender</span>
+            <span class="trends_item" data-filter=".emplyment">Employment Status</span>
+            <span class="trends_item" data-filter=".language">Language</span>
+            <span class="trends_item" data-filter=".live">Where do you live</span>
+        </div>
+
+        <div class="trends_container grid">
+
+            <div class="trends_card age mix">
+                <img src="demo.jpg" alt="" class="trends_img">
+                <h3 class="trends_title">
+                  DEMO
+                </h3>
+                <a href="" class="trends_btn">demo
+                    <ion-icon class="trends_icon" name="arrow-forward-outline"></ion-icon>
+                </a>
+            </div>
+
+            <div class="trends_card mix database">
+                <img src="demo.jpg" alt="" class="trends_img">
+                <h3 class="trends_title">
+                   huhu
+                </h3>
+                <a href="" class="trends_btn">demo
+                    <ion-icon class="trends_icon" name="arrow-forward-outline"></ion-icon>
+                </a>
+            </div>
+
+            <div class="trends_card mix education">
+                <img src="demo.jpg" alt="" class="trends_img">
+                <h3 class="trends_title">
+                   heh
+                </h3>
+                <a href="" class="trends_btn">demo
+                    <ion-icon class="trends_icon" name="arrow-forward-outline"></ion-icon>
+                </a>
+            </div>
         </div>
 
 
@@ -244,7 +276,8 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="assets/script.js"></script>
+    <script src="assets/mixitup.min.js"></script>
     <!-- icons-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

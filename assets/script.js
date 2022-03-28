@@ -31,3 +31,23 @@ modelClose.forEach((mc,i)=>{
         
     })
 })
+/*------- Filters JS -------------*/
+
+const linkTrends = document.querySelectorAll('.trends_item')
+function activeTrends() {
+    linkTrends.forEach(l => l.classList.remove('active-trends'))
+    this.classList.add('active-trends')
+    
+}
+linkTrends.forEach(l=>l.addEventListener('click',activeTrends))
+
+
+
+let mixerTrending = mixitup('.trends_container', {
+    selectors: {
+        target: '.trends_card'
+    },
+    animation: {
+        duration: 300
+    }
+});
