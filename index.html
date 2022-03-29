@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="main.css">
     <title>Recommendation System</title>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    
     <!--  Swiper.js -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!--   Chart.js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
     <body>
+
+<!--  navigation -->
 
 <div class="container">
     <nav class="navbar" id="myTopnav">
@@ -27,10 +28,10 @@
             <a href="#" class="navbar-item">
                 Documentation
             </a>
-            <a href="#" class="navbar-item">
+            <a href="#services" class="navbar-item">
                 Services
             </a>
-            <a href="#" class="navbar-item">
+            <a href="#trends" class="navbar-item">
                 Trending <icon-icon name="trending-up-outline"></icon-icon>
             </a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -42,20 +43,21 @@
 <!-- Main page   -->
 
 
-    <section class="main-hero">
-       <!-- file upload page -->
+    <section class="main-hero" id="#home">
+       
     </section>
 
 
 
 <!-- service section-->
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="Title">Services</div>
         <h3 class="sub_title">What We Offer</h3>
 
         <div class="grid service_container">
             <div class="service_card">
+                <ion-icon name="cog-outline" size="large"></ion-icon>
                 <h3 class="service_title">Skills Extraction</h3>
 
                 <span class="service_btn">
@@ -95,84 +97,11 @@
                 </div>
 
             </div>
+
+
             <div class="service_card">
-                <h3 class="service_title">Service title</h3>
-
-                <span class="service_btn">
-                    See more <ion-icon class="service_icon" name="arrow-forward-outline"></ion-icon>
-                </span>
-                <div class="service_model">
-                    <div class="service_model-content">
-                        <ion-icon name="close-outline" class="service_model-close"></ion-icon>
-
-                        <h3 class="service_model-title">Skills Extraction</h3>
-                        <p class="service_model-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et tortor sit amet sem viverra sollicitudin eget eget eros. Donec id bibendum odio. Suspendisse rhoncus, nulla id vulputate euismod, odio odio sollicitudin ex, et scelerisque nisi lorem vitae ligula. Nullam tristique ligula in nisl maximus, vitae rhoncus eros tempus. 
-                        </p>
-                        <ul class="service_model-list">
-                            <li class="service_model-item">
-                                <ion-icon name="checkmark-outline" class="service_model-icon"></ion-icon>
-                                <p class="service_model-info">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                            </li>
-                            <li class="service_model-item">
-                                <ion-icon name="checkmark-outline" class="service_model-icon"></ion-icon>
-                                <p class="service_model-info">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                            </li>
-                            <li class="service_model-item">
-                                <ion-icon name="checkmark-outline" class="service_model-icon"></ion-icon>
-                                <p class="service_model-info">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-            <div class="service_card">
-                <h3 class="service_title">Service title</h3>
-
-                <span class="service_btn">
-                    See more <ion-icon class="service_icon" name="arrow-forward-outline"></ion-icon>
-                </span>
-                <div class="service_model">
-                    <div class="service_model-content">
-                        <ion-icon name="close-outline" class="service_model-close"></ion-icon>
-
-                        <h3 class="service_model-title">Skills Extraction</h3>
-                        <p class="service_model-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et tortor sit amet sem viverra sollicitudin eget eget eros. Donec id bibendum odio. Suspendisse rhoncus, nulla id vulputate euismod, odio odio sollicitudin ex, et scelerisque nisi lorem vitae ligula. Nullam tristique ligula in nisl maximus, vitae rhoncus eros tempus. 
-                        </p>
-                        <ul class="service_model-list">
-                            <li class="service_model-item">
-                                <ion-icon name="checkmark-outline" class="service_model-icon"></ion-icon>
-                                <p class="service_model-info">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                            </li>
-                            <li class="service_model-item">
-                                <ion-icon name="checkmark-outline" class="service_model-icon"></ion-icon>
-                                <p class="service_model-info">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                            </li>
-                            <li class="service_model-item">
-                                <ion-icon name="checkmark-outline" class="service_model-icon"></ion-icon>
-                                <p class="service_model-info">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-            <div class="service_card">
-                <h3 class="service_title">Service title</h3>
+                <ion-icon name="library-outline" size="large"></ion-icon>
+                <h3 class="service_title">Course Recommendation</h3>
 
                 <span class="service_btn">
                     See more <ion-icon class="service_icon" name="arrow-forward-outline"></ion-icon>
@@ -210,6 +139,46 @@
                 </div>
             </div>
 
+
+            <div class="service_card">
+                <ion-icon name="laptop-outline" size="large"></ion-icon>
+                <h3 class="service_title">Job Recommendation</h3>
+
+                <span class="service_btn">
+                    See more <ion-icon class="service_icon" name="arrow-forward-outline"></ion-icon>
+                </span>
+                <div class="service_model">
+                    <div class="service_model-content">
+                        <ion-icon name="close-outline" class="service_model-close"></ion-icon>
+
+                        <h3 class="service_model-title">Skills Extraction</h3>
+                        <p class="service_model-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et tortor sit amet sem viverra sollicitudin eget eget eros. Donec id bibendum odio. Suspendisse rhoncus, nulla id vulputate euismod, odio odio sollicitudin ex, et scelerisque nisi lorem vitae ligula. Nullam tristique ligula in nisl maximus, vitae rhoncus eros tempus. 
+                        </p>
+                        <ul class="service_model-list">
+                            <li class="service_model-item">
+                                <ion-icon name="checkmark-outline" class="service_model-icon"></ion-icon>
+                                <p class="service_model-info">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </li>
+                            <li class="service_model-item">
+                                <ion-icon name="checkmark-outline" class="service_model-icon"></ion-icon>
+                                <p class="service_model-info">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </li>
+                            <li class="service_model-item">
+                                <ion-icon name="checkmark-outline" class="service_model-icon"></ion-icon>
+                                <p class="service_model-info">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
 
@@ -234,33 +203,35 @@
         <div class="trends_container grid">
 
             <div class="trends_card age mix">
-                <img src="demo.jpg" alt="" class="trends_img">
-                <h3 class="trends_title">
-                  DEMO
-                </h3>
-                <a href="" class="trends_btn">demo
-                    <ion-icon class="trends_icon" name="arrow-forward-outline"></ion-icon>
-                </a>
+                <canvas id="myAge"></canvas>
             </div>
 
             <div class="trends_card mix database">
-                <img src="demo.jpg" alt="" class="trends_img">
-                <h3 class="trends_title">
-                   huhu
-                </h3>
-                <a href="" class="trends_btn">demo
-                    <ion-icon class="trends_icon" name="arrow-forward-outline"></ion-icon>
-                </a>
+                <canvas id="myDatabase"></canvas>
             </div>
 
             <div class="trends_card mix education">
-                <img src="demo.jpg" alt="" class="trends_img">
-                <h3 class="trends_title">
-                   heh
-                </h3>
-                <a href="" class="trends_btn">demo
-                    <ion-icon class="trends_icon" name="arrow-forward-outline"></ion-icon>
-                </a>
+                <canvas id="myGender"></canvas>
+            </div>
+
+            <div class="trends_card mix gender">
+                <canvas id="myAge"></canvas>
+            </div>
+
+            <div class="trends_card mix employment">
+                
+            </div>
+
+            <div class="trends_card mix language">
+                
+            </div>
+
+            <div class="trends_card mix language percentage">
+                
+            </div>
+
+            <div class="trends_card mix live">
+                
             </div>
         </div>
 
@@ -270,7 +241,36 @@
 </section>
 
 <!--   footer  -->
-<footer class="">
+<footer class="footer">
+    <div class="footer_container">
+        <div class="footer_title_copy">
+        <h2 class="footer_title">Title</h2>
+        <span class="footer_copy">
+            &#169; GK. All rights reserved  | Copyright @ 2022
+        </span>
+        </div>
+
+        <ul class="footer_list">
+            <li>
+                <a href="#home" class="footer_link">Home</a>
+            </li>
+
+            <li>
+                <a href="#services" class="footer_link">Services</a>
+            </li>
+
+            <li>
+                <a href="#trends" class="footer_link">Trends</a>
+            </li>
+        </ul>
+
+        <ul class="footer_social">
+            <a href="" target="_blank" class="footer_social-link">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+        </ul>
+
+    </div>
 
 </footer>
 
@@ -281,7 +281,136 @@
     <!-- icons-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+
+    <!----------  Graph.js         ---------->
+
+    <script>
+
+        /*-------  Age     -------*/
+        const ctx = document.getElementById('myAge').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+  
+
+const database = document.getElementById('myDatabase').getContext('2d');
+const myDatabase = new Chart(database, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+
+const gender = document.getElementById('myGender').getContext('2d');
+const myGender = new Chart(gender, {
+    type: 'pie',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+
+
+
+/*-------- filter -----------*/
+
+let trends_content = mixitup('.trends_container', {
+    selectors: {
+        target: '.trends_card'
+    },
+    animation: {
+        duration: 300
+    }
+});
+    </script>
 
     </body>
 

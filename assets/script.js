@@ -1,4 +1,3 @@
-
 /*--------  nav ---------- */
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -42,13 +41,3 @@ function activeTrends() {
 }
 linkTrends.forEach(l=>l.addEventListener('click',activeTrends))
 
-
-
-let mixerTrending = mixitup('.trends_container', {
-    selectors: {
-        target: '.trends_card'
-    },
-    animation: {
-        duration: 300
-    }
-});
