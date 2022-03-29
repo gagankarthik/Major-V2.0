@@ -124,12 +124,14 @@ nav .nav-bar .logo a{
 
 
 
-.dark-light i,
-.searchToggle i{
-    position: absolute;
+.dark-light i{
+    position: relative;
     color: var(--text-color);
     font-size: 22px;
     cursor: pointer;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
     transition: all 0.3s ease;
 }
 
