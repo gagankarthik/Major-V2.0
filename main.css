@@ -198,6 +198,77 @@ nav .nav-bar .logo a{
         margin-top: 20px;
     }
 }
+/*-----------  home ----------*/
+
+
+.showcase-area {
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  .showcase_container{
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  }
+  
+  .big-title {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    line-height: 1.4;
+    padding: 15px;
+    margin-left: 20px;
+  }
+  
+  .text {
+    font-size: 1.1rem;
+    margin: 1.9rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2.3;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  .right{
+      float: right;
+      position: relative;
+  }
+  .left{
+      float: left;
+  }
+
+  /*---- file upload ---*/
+ 
+  .wrapper{
+      border-radius: 15px;
+      padding: 30px;
+      width: 375px;
+      box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.5);
+      background: var(--text-color);
+      justify-content: center;
+      text-align: center;
+  }
+  .wrapper form{
+      display: flex;
+      flex-direction: column;
+      border-radius: 5px;
+      border: 2px dashed #6990f2;
+      justify-content: center;
+      margin: 10px;
+  }
+  .file-input{
+      position: relative;
+      overflow: hidden;
+      outline: none;
+}
+
+.file-input input[type="file"]{
+    display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  font-size: 100px;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
 
 /*----  service section      -----*/
 section{
@@ -444,4 +515,9 @@ canvas{
         justify-content: center;
 
     }
+    .showcase_container{
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 1rem;
+        margin: 10px;
+      }
 }
