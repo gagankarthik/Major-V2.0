@@ -16,30 +16,36 @@
 
 <!--  navigation -->
 
-<div class="container">
-    <nav class="navbar" id="myTopnav">
-        <div class="navbar-brand">
-            <p>Brand</p>
+<nav>
+    <div class="nav-bar">
+        <i class='bx bx-menu sidebarOpen' ></i>
+        <span class="logo navLogo"><a href="#">Title</a></span>
+
+        <div class="menu">
+            <div class="logo-toggle">
+                <span class="logo"><a href="#">Title</a></span>
+                <i class='bx bx-x siderbarClose'></i>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#trends">Trends</a></li>
+            </ul>
         </div>
-        <div class="navbar-menu">
-            <a href="#" class="navbar-item">
-                Home
-            </a>
-            <a href="#" class="navbar-item">
-                Documentation
-            </a>
-            <a href="#services" class="navbar-item">
-                Services
-            </a>
-            <a href="#trends" class="navbar-item">
-                Trending <icon-icon name="trending-up-outline"></icon-icon>
-            </a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <ion-icon name="menu-outline"></ion-icon>
-            </a>
+
+        <div class="darkLight-searchBox">
+            <div class="dark-light">
+                <i class='bx bx-moon moon'></i>
+                <i class='bx bx-sun sun'></i>
+            </div>
+
+            </div>
         </div>
-    </nav>
-</div>
+    </div>
+</nav>
+
 <!-- Main page   -->
 
 
@@ -187,7 +193,6 @@
 <!-- trends section -->
 <section class="trends" id="trends">
     <div class="Title">Trends</div>
-        <h3 class="sub_title">Subtitle</h3>
 
         <div class="trends_filters">
             <span class="trends_item active-trends" data-filter="all">All</span>
@@ -243,12 +248,8 @@
 <!--   footer  -->
 <footer class="footer">
     <div class="footer_container">
-        <div class="footer_title_copy">
         <h2 class="footer_title">Title</h2>
-        <span class="footer_copy">
-            &#169; GK. All rights reserved  | Copyright @ 2022
-        </span>
-        </div>
+    
 
         <ul class="footer_list">
             <li>
@@ -271,7 +272,11 @@
         </ul>
 
     </div>
-
+    <div class="copyrights">
+    <span class="footer_copy">
+        &#169; GK. All rights reserved  | Copyright @ 2022
+    </span>
+    </div>
 </footer>
 
 
