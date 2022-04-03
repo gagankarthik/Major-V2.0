@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>SCJ.Inc | Results</title>
+</head>
+<body>
+  <div class="cd-tabs cd-tabs--vertical container max-width-md margin-top-xl margin-bottom-lg js-cd-tabs">
+    <nav class="cd-tabs__navigation">
+      <ul class="cd-tabs__list">
+        <li>
+          <a href="#tab-inbox" class="cd-tabs__item cd-tabs__item--selected">
+            <svg aria-hidden="true" class="icon icon--xs"><path d="M15,0H1C0.4,0,0,0.4,0,1v14c0,0.6,0.4,1,1,1h14c0.6,0,1-0.4,1-1V1C16,0.4,15.6,0,15,0z M14,2v7h-3 c-0.6,0-1,0.4-1,1v2H6v-2c0-0.6-0.4-1-1-1H2V2H14z"></path></svg>
+            <span>Skills</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#tab-new" class="cd-tabs__item">
+            <svg aria-hidden="true" class="icon icon--xs"><path d="M12.7,0.3c-0.4-0.4-1-0.4-1.4,0l-7,7C4.1,7.5,4,7.7,4,8v3c0,0.6,0.4,1,1,1h3 c0.3,0,0.5-0.1,0.7-0.3l7-7c0.4-0.4,0.4-1,0-1.4L12.7,0.3z M7.6,10H6V8.4l6-6L13.6,4L7.6,10z"></path><path d="M15,10c-0.6,0-1,0.4-1,1v3H2V2h3c0.6,0,1-0.4,1-1S5.6,0,5,0H1C0.4,0,0,0.4,0,1v14c0,0.6,0.4,1,1,1h14 c0.6,0,1-0.4,1-1v-4C16,10.4,15.6,10,15,10z"></path></svg>
+            <span>Course</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#tab-gallery" class="cd-tabs__item">
+            <svg aria-hidden="true" class="icon icon--xs"><path d="M15,4h-2.5l-1.7-2.6C10.6,1.2,10.3,1,10,1H6C5.7,1,5.4,1.2,5.2,1.4L3.5,4H1C0.4,4,0,4.4,0,5v9 c0,0.6,0.4,1,1,1h14c0.6,0,1-0.4,1-1V5C16,4.4,15.6,4,15,4z M8,12c-1.7,0-3-1.3-3-3s1.3-3,3-3s3,1.3,3,3S9.7,12,8,12z"></path></svg>
+            <span>Job</span>
+          </a>
+        </li>
+
+       </ul> <!-- cd-tabs__list -->
+    </nav>
+
+    <ul class="cd-tabs__panels">
+      <li id="tab-inbox" class="cd-tabs__panel cd-tabs__panel--selected text-component">
+        {%for skills in skills%}
+                        <p>{{skills}}</p>
+                             {% endfor %}
+      </li>
+
+      <li id="tab-new" class="cd-tabs__panel text-component">
+        <p>New Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non a voluptatibus, ex odit totam cumque nihil eos asperiores ea, labore rerum. Doloribus tenetur quae impedit adipisci, laborum dolorum eaque ratione quaerat, eos dicta consequuntur atque ex facere voluptate cupiditate incidunt.</p>
+
+        <p>New Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non a voluptatibus, ex odit totam cumque nihil eos asperiores ea, labore rerum. Doloribus tenetur quae impedit adipisci, laborum dolorum eaque ratione quaerat, eos dicta consequuntur atque ex facere voluptate cupiditate incidunt.</p>
+      </li>
+
+      <li id="tab-gallery" class="cd-tabs__panel text-component">
+        <p>Gallery Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque tenetur aut, cupiditate, libero eius rerum incidunt dolorem quo in officia.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa vero, culpa doloremque voluptatum consectetur mollitia, atque expedita unde excepturi id, molestias maiores delectus quos molestiae. Ab iure provident adipisci eveniet quisquam ratione libero nam inventore error pariatur optio facilis assumenda sint atque cumque, omnis perspiciatis. Maxime minus quam voluptatum provident aliquam voluptatibus vel rerum. Soluta nulla tempora aspernatur maiores! Animi accusamus officiis neque exercitationem dolore ipsum maiores delectus asperiores reprehenderit pariatur placeat, quaerat sed illum optio qui enim odio temporibus, nulla nihil nemo quod dicta consectetur obcaecati vel. Perspiciatis animi corrupti quidem fugit deleniti, atque mollitia labore excepturi ut.</p>
+      </li>
+
+
+    </ul> <!-- cd-tabs__panels -->
+  </div> <!-- cd-tabs -->
+<script src="../static/js/main.js"></script>
+</body>
+</html>

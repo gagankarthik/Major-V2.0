@@ -72,3 +72,7 @@ function activeTrends() {
 }
 linkTrends.forEach(l=>l.addEventListener('click',activeTrends))
 
+/*-----------  file autosubmit ---------*/
+document.getElementById("file").onchange = function() {
+    document.getElementById("form").submit();
+};
