@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Recommendation System</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <title>SCJ.Inc</title>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     
     <!--  Swiper.js -->
@@ -19,11 +19,11 @@
 <nav>
     <div class="nav-bar">
         <i class='bx bx-menu sidebarOpen' ></i>
-        <span class="logo navLogo"><a href="#">Title</a></span>
+        <span class="logo navLogo"><a href="#">SCJ.Inc</a></span>
 
         <div class="menu">
             <div class="logo-toggle">
-                <span class="logo"><a href="#">Title</a></span>
+                <span class="logo"><a href="#">SCJ.Inc</a></span>
                 <i class='bx bx-x siderbarClose'></i>
             </div>
 
@@ -54,7 +54,7 @@
           <h1>Start Exploring now.</h1>
         </div>
         <p class="text">
-          We provide solutions here.
+          We provide solutions for Great Skills, Courses and Jobs.
           
         </p>
        
@@ -63,10 +63,10 @@
       <div class="right">
        <div class="wrapper">
            <h3>File Upload</h3>
-           <form action="#" method="post">
+           <form action="/results" method="POST" enctype="multipart/form-data" id="form">
                <label class="file-input">
-               <img src="assets/img/upload.png" alt="upload">
-               <input type="file" required>
+               <img src="../static/upload.png" alt="upload">
+               <input type="file" name="file" id="file" required>
                </label>
            </form>
 
@@ -98,7 +98,7 @@
 
                         <h3 class="service_model-title">Skills Extraction</h3>
                         <p class="service_model-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et tortor sit amet sem viverra sollicitudin eget eget eros. Donec id bibendum odio. Suspendisse rhoncus, nulla id vulputate euismod, odio odio sollicitudin ex, et scelerisque nisi lorem vitae ligula. Nullam tristique ligula in nisl maximus, vitae rhoncus eros tempus. 
+                            desc
                         </p>
                         <ul class="service_model-list">
                             <li class="service_model-item">
@@ -270,7 +270,7 @@
 <!--   footer  -->
 <footer class="footer">
     <div class="footer_container">
-        <h2 class="footer_title">Title</h2>
+        <h2 class="footer_title">SCJ.Inc</h2>
     
 
         <ul class="footer_list">
@@ -296,15 +296,15 @@
     </div>
     <div class="copyrights">
     <span class="footer_copy">
-        &#169; GK. All rights reserved  | Copyright @ 2022
+        &#169; SCJ.Inc All rights reserved  | Copyright @ 2022
     </span>
     </div>
 </footer>
 
 
 
-    <script src="assets/script.js"></script>
-    <script src="assets/mixitup.min.js"></script>
+    <script src="../static/js/script.js"></script>
+    <script src="../static/js/mixitup.min.js"></script>
     <!-- icons-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
